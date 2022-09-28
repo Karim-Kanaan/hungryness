@@ -1,5 +1,6 @@
 let Hungryness = 0
-basic.forever(function () {
+basic.forever(function on_forever() {
+    
     if (input.buttonIsPressed(Button.A)) {
         Hungryness = Hungryness + 1
         basic.showNumber(Hungryness)
@@ -7,4 +8,5 @@ basic.forever(function () {
         Hungryness = 0
         basic.showNumber(Hungryness)
     }
+    
 })
